@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.DashboardUserActivity">
+
+
+
+<!--    <Button-->
+<!--        android:id="@+id/logutBtn"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="logout"-->
+<!--        android:background="@drawable/getstarted_btn"-->
+<!--        android:textStyle="bold"-->
+<!--        android:layout_marginTop="16dp"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        />-->
+
+    <TextView
+        android:id="@+id/categoryTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:text="Categories"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/chatIv"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:src="@drawable/ic_chat"
+        android:layout_marginTop="14dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="16dp"/>
+
+
+    <!--Tabs-->
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/categoryTv"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="5dp"
+        android:background="@color/gray_01"
+        app:tabBackground="@drawable/tab_selector"
+        app:tabIndicatorFullWidth="false"
+        app:tabIndicatorHeight="0dp"
+        app:tabMode="scrollable"
+        app:tabUnboundedRipple="false" />
+
+    <!--View Page: Swipe/show/change fragments-->
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tabLayout"
+        android:layout_above="@id/navigationLl"/>
+
+    <LinearLayout
+        android:id="@+id/navigationLl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/gray_03"
+        android:layout_alignParentBottom="true">
+
+        <!--Button: open to view pdf-->
+<!--        <androidx.appcompat.widget.AppCompatButton-->
+<!--            android:id="@+id/readBookBtn"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_weight="1"-->
+<!--            android:background="@color/gray_03"-->
+<!--            android:text="Read"-->
+<!--            android:textColor="@color/black"-->
+<!--            android:textAllCaps="false"-->
+<!--            android:drawableTop="@drawable/ic_book_white"-->
+<!--            />-->
+
+        <!--Button: download pdf-->
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/categoryBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/gray_03"
+            android:text="Category"
+            android:textColor="@color/black"
+            android:textAllCaps="false"
+            android:drawableTop="@drawable/ic_category"
+            />
+
+        <!--Add to favorite button-->
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/profileBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/gray_03"
+            android:textAllCaps="false"
+            android:text="Profile"
+            android:textColor="@color/black"
+            android:drawableTop="@drawable/ic_person_black"
+            />
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

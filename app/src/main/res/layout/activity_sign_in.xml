@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.SignInActivity">
+
+    <RelativeLayout
+        android:id="@+id/toolbarRl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <ImageView
+            android:id="@+id/backIv"
+            android:src="@drawable/arrow_back"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="20dp"
+            android:foregroundGravity="center"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="99dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginBottom="24dp"
+            android:gravity="center"
+            android:layout_centerHorizontal="true"
+            android:text="Get Started"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            />
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/requestTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Please fill your details to login"
+        android:layout_below="@id/toolbarRl"
+        android:layout_marginTop="32dp"
+        android:textSize="16dp"
+        android:textColor="@color/black"
+        android:layout_marginStart="16dp"
+        />
+
+
+   <EditText
+       android:id="@+id/usernameEt"
+       android:layout_width="match_parent"
+       android:layout_height="50dp"
+      android:layout_below="@id/requestTv"
+       android:background="@drawable/edit_text_backg"
+       android:hint="Username/email/phone"
+       android:layout_marginTop="40dp"
+       android:textStyle="bold"
+       android:textColor="@color/black"
+       android:textSize="16sp"
+       android:layout_centerHorizontal="true"
+       android:padding="10dp"
+       android:layout_marginRight="20dp"
+       android:layout_marginLeft="20dp"
+       />
+
+    <EditText
+        android:id="@+id/passwordEt"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/usernameEt"
+        android:background="@drawable/edit_text_backg"
+        android:hint="Password"
+        android:layout_marginTop="40dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:layout_centerHorizontal="true"
+        android:inputType="textPassword"
+        android:drawableRight="@drawable/password_eye"
+        android:drawablePadding="30dp"
+        android:padding="10dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+
+        />
+
+<!--    <TextView-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        android:text="OR"-->
+<!--        android:layout_below="@id/passwordEt"-->
+<!--        android:layout_marginTop="24dp"-->
+<!--        android:textSize="16sp"-->
+<!--        android:textColor="@color/black"/>-->
+
+<!--    <EditText-->
+<!--        android:id="@+id/getOTPEt"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="50dp"-->
+<!--        android:layout_below="@id/passwordEt"-->
+<!--        android:background="@drawable/edit_text_backg"-->
+<!--        android:hint="Get OTP"-->
+<!--        android:layout_marginTop="70dp"-->
+<!--        android:textStyle="bold"-->
+<!--        android:textColor="@color/black"-->
+<!--        android:textSize="16sp"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        android:padding="10dp"-->
+<!--        android:layout_marginRight="20dp"-->
+<!--        android:layout_marginLeft="20dp"-->
+<!--        />-->
+
+    <TextView
+        android:id="@+id/forgetPassTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/passwordEt"
+        android:text="forget password?"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:textColor="@color/black"
+        android:textStyle="normal"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/siginBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/getstarted_btn"
+        android:layout_below="@id/forgetPassTv"
+        android:layout_marginTop="40dp"
+        android:text="Get Started"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:shadowColor="@color/black"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="130dp"
+        android:layout_marginBottom="40dp"
+        android:text="New member? "
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/registerTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="225dp"
+        android:layout_marginBottom="40dp"
+        android:text="Register"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+
+        />
+
+</RelativeLayout>
